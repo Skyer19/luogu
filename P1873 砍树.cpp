@@ -12,7 +12,7 @@ long long a[MAX];
 bool check(long long high){
 	long long sum=0;
 	for(int i=1;i<=n;i++){
-		if(a[i]>=high){
+		if(a[i]>high){
 			sum+=a[i]-high;
 		} 
 	}
@@ -37,8 +37,6 @@ int main(){
 			right=mid-1;
 		}
 	}
-    mid=min(mid,left);
-    mid=min(mid,right);
 	cout<<mid<<endl;
 	return 0;
 }

@@ -16,7 +16,6 @@ void print()
 void dfs( int k)
 {
 	if(k==n){
-	
 		print();
 		return;
 	}
